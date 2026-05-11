@@ -3,6 +3,12 @@ name: Docker Build
 on:
   release:
     types: [published]
+  push:
+    branches:
+      - main
+      - dev
+      - fix/screen-orientation-respect-system-settings
+  workflow_dispatch:
 
 permissions:
   contents: read
